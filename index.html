@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AICTE Cybersecurity Portal - Sign In</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <span class="eyebrow">AICTE DCIM / SOC</span>
+      <h1>Cybersecurity Portal</h1>
+      <p class="subtitle">Data Center Infrastructure & Threat Management</p>
+    </div>
+
+    <!-- Universal Alert Banner -->
+    <div class="auth-alert" id="authAlert" role="alert" style="display: none;"></div>
+
+    <!-- 1. LOGIN FORM -->
+    <form id="loginForm" class="auth-form active">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <div class="input-field-wrapper">
+          <input type="text" id="username" placeholder="e.g. superadmin, admin" autocomplete="username" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <div class="input-field-wrapper password-wrapper">
+          <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+          <button type="button" class="toggle-password-btn" id="toggleLoginPassword" aria-label="Toggle password visibility" title="Show/Hide Password">👁️</button>
+        </div>
+      </div>
+
+      <div class="form-row-utility">
+        <label class="remember-label"><input type="checkbox" id="rememberMe"> Remember this console</label>
+      </div>
+
+      <button type="submit" class="submit-btn" id="loginBtn">
+        <span class="btn-text">Authenticate & Sign In</span>
+      </button>
+
+
+    </form>
+
+    <div class="security-footer">
+      <span>🛡️ Protected by AICTE Identity Guard · 8-Character Password Policy</span>
+    </div>
+  </div>
+
+  <script src="js/credentials.js?v=2.5"></script>
+  <script src="js/auth.js?v=3.0-ceh-sqli"></script>
+</body>
+</html>
